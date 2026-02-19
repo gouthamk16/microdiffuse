@@ -9,7 +9,7 @@ Like microgpt, we strip diffusion to its bare algorithmic core:
 - DDPM forward (noising) and reverse (denoising) processes
 - Generates new samples by iteratively denoising pure noise
 
-### What We Generate
+### Data
 Instead of images (which need large models and pixel grids), we generate 2D point clouds — points sampled from a learned distribution. This is the simplest possible continuous data domain for diffusion:
 - Dataset: Points arranged in simple geometric patterns (e.g. a circle, a spiral, concentric rings). Procedurally generated.
 - Output: After training, the model turns random Gaussian noise into points that match the training distribution.
